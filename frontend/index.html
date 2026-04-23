@@ -119,7 +119,7 @@ function loadMovies() {
         }
     });
 
-    let url = "http://127.0.0.1:5000/movies?page=" + page;
+  let url = "https://movie-filter-rlo8.onrender.com/movies?page=" + page;
 
     genres.forEach(g => url += "&genre=" + g);
     languages.forEach(l => url += "&language=" + l);
@@ -173,7 +173,7 @@ function addMovie() {
         return;
     }
 
-    fetch("http://127.0.0.1:5000/movies", {
+    fetch("https://movie-filter-rlo8.onrender.com/movies", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
